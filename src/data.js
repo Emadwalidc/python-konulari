@@ -123,4 +123,114 @@ class Dog:
 >>> jack.speak("Woof")
 'Jack says Woof'`,
   },
+  Listeler: {
+    title: 'Listeler',
+    description:
+      'Pythonda listeler, birden fazla değeri bir arada saklamamıza olanak sağlar. Listeler sıralı ve değiştirilebilir veri yapılarıdır.',
+    code: `
+meyveler = ["elma", "muz", "çilek", "portakal"]
+
+# Liste elemanlarını yazdırma
+for meyve in meyveler:
+    print(meyve)
+
+# Yeni eleman ekleme
+meyveler.append("kiraz")
+print(meyveler)
+
+# Eleman silme
+meyveler.remove("çilek")
+print(meyveler)
+
+# Liste sıralama
+meyveler.sort()
+print(meyveler)`,
+  },
+  Sözlükler: {
+    title: 'Sözlükler',
+    description:
+      'Sözlükler, anahtar-değer çiftlerini saklayan veri yapılarıdır. Anahtarlar benzersizdir ve her biri bir değere karşılık gelir.',
+    code: `
+telefonRehberi = {
+    "Ali": "05321234567",
+    "Ahmet": "05437654321",
+    "Ayşe": "05559876543"
+}
+
+# Anahtara göre değer bulma
+print(telefonRehberi["Ali"])
+
+# Yeni bir anahtar-değer çifti ekleme
+telefonRehberi["Mehmet"] = "05678901234"
+print(telefonRehberi)
+
+# Anahtarları ve değerleri listeleme
+for isim, numara in telefonRehberi.items():
+    print(f"{isim}: {numara}")`,
+  },
+  Dosyalar: {
+    title: 'Dosyalar',
+    description:
+      'Dosya işlemleri ile dışardan veri okuyabilir veya programa veri yazabiliriz.',
+    code: `
+# Dosya oluşturma ve yazma
+with open("deneme.txt", "w") as dosya:
+    dosya.write("Merhaba, dünya!")
+
+# Dosya okuma
+with open("deneme.txt", "r") as dosya:
+    veri = dosya.read()
+    print(veri)`,
+  },
+  Hata_Yakalama: {
+    title: 'Hata Yakalama',
+    description:
+      'Python programlarında hata durumlarını yönetmek için try-except bloklarını kullanabiliriz.',
+    code: `
+try:
+    sayi = int(input("Bir sayı girin: "))
+    sonuc = 10 / sayi
+    print(sonuc)
+except ZeroDivisionError:
+    print("Sıfıra bölme hatası!")
+except ValueError:
+    print("Geçerli bir sayı girin!")
+finally:
+    print("İşlem tamamlandı.")`,
+  },
+  Setler: {
+    title: 'Setler',
+    description:
+      'Setler, benzersiz elemanlardan oluşan sırasız veri yapılarıdır. Eleman tekrarı içermez.',
+    code: `
+meyveler = {"elma", "armut", "muz", "elma"}
+
+# Benzersiz elemanlar
+print(meyveler)
+
+# Eleman ekleme
+meyveler.add("çilek")
+print(meyveler)
+
+# Eleman silme
+meyveler.remove("muz")
+print(meyveler)`,
+  },
+  Zaman_Modülü: {
+    title: 'Zaman Modülü',
+    description:
+      'Python\'da zaman ile ilgili işlemler yapmak için time ve datetime modülleri kullanılır.',
+    code: `
+import time
+import datetime
+
+# Şimdiki zamanı alma
+simdi = datetime.datetime.now()
+print("Şu anki zaman:", simdi)
+
+# Uyutma
+print("3 saniye bekliyorum...")
+time.sleep(3)
+print("Devam ediyoruz!")`,
+  },
 };
