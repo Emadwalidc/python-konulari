@@ -36,22 +36,14 @@ export const EXAMPLES = {
     description:
       'Python programlama dilinde koşullu durumları belirtmek için üç adet deyimden yararlanıyoruz: if elif else.',
     code: `
-name = input('adınız: ')
-kg = float(input('kilonuz: '))
-hg = float(input('boyunuz: '))
+num = int(input('sayı: '))
 
-index = (kg) / (hg ** 2)
-
-if (index >= 0) and (index<=18.4):
-   print(f'{name} kilo indeksin: {index} ve kilo değerlendirmen zayıf.')
-elif (index>18.4) and (index<=24.9):
-   print(f'{name} kilo indeksin: {index} ve kilo değerlendirmen normal.')
-elif (index>24.9) and (index<=29.9):
-   print(f'{name} kilo indeksin: {index} ve kilo değerlendirmen kilolu.')
-elif (index>=29.9) and (index<=45.9):
-   print(f'{name} kilo indeksin: {index} ve kilo değerlendirmen obez.')
+if num > 0:
+    print('sayı pozitif')
+elif num < 0:
+    print('sayı negatif')
 else:
-   print('bilgileriniz yanlış.')`,
+    print('sayı sıfır')`,
   },
   Döngüler: {
     title: 'Döngüler',

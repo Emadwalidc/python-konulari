@@ -5,7 +5,7 @@ import { EXAMPLES } from '../data.js';
 import Section from './Section.jsx';
 
 export default function Examples() {
-    const [selectedTopic, setSelectedTopic] = useState('');
+    const [selectedTopic, setSelectedTopic] = useState('Koşul_ifadeleri');
 
     function handleSelect (selectedButton){
       setSelectedTopic(selectedButton);
