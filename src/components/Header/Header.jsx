@@ -8,9 +8,6 @@ export default function Header() {
       <header>
       <img src={reactImage} alt="Stylized atom" />
       <h1>Python Konuları</h1>
-      <p>
-         Python'un ve programlama'nın temel konuları 
-      </p>
     </header>
     );
   }

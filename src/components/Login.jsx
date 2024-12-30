@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -6,6 +7,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -54,6 +57,15 @@ const Login = () => {
           <button type="submit" className="login-btn">
             Giriş Yap
           </button>
+        <p className="login-footer">
+          Hesabın yok mu?{" "}
+          <span
+            className="signup-link"
+            onClick={() => navigate("/signup")}
+          >
+            Kayıt Ol
+          </span>
+        </p>
         </form>
       </div>
 

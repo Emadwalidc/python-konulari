@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/" className="navbar-item">Ana Sayfa</Link>
+            <Link to="/" className="navbar-item">Ana Sayfa</Link>
             </li>
             <li>
               <Link to="/login" className="navbar-item">Giriş</Link>
